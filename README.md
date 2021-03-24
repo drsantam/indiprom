@@ -1,2 +1,2 @@
 # indiprom
-A repository containing the configuration and other material for the INDIPROM project. 
+The INDIPROM project is a open source project which aims to build a simple electronic system to document patient reported outcomes electronically and also present them to the doctors. A key goal is to ensure that the software should be mostly GUI based and should be easily exportable via simple configuration files. A decision was made to develop this in Drupal keeping in mind the Open source ethos of the project as well as the extensive customizability of Drupal. Contributed modules which will be extensively used are Webform, Group, Charts as well as several other. This repository will be a store for the configuration files and other miscellaneous code. 
