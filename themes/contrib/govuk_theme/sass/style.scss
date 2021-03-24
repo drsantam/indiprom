@@ -1,0 +1,7 @@
+$govuk-global-styles: true !default;
+$govuk-assets-path: '../assets/' !default;
+@import "govuk-frontend/govuk/all";
+@import "typography";
+@import "overrides";
+@import "search";
+@import "mobile-menu";

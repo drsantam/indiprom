@@ -1,0 +1,6 @@
+<script>
+	if (document.cookie.indexOf("seen_cookie_message") == -1) {
+		document.write('<div class="app-cookie-banner js-cookie-banner" style="display: block;"><p class="govuk-width-container">{{ site_name }} {{ site_slogan }} uses cookies to make the site simpler.<a href="/cookies" class="govuk-link" title="Cookies">Find out more about cookies</a></p></div>');
+		document.cookie = "seen_cookie_message=yes";
+	}
+</script>

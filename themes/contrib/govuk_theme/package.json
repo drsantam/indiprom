@@ -1,0 +1,27 @@
+{
+  "name": "drupal-govuk",
+  "version": "1.0.0",
+  "description": "GOV.UK theme for Drupal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKGovernmentBEIS/beis-primary-authority-register.git"
+  },
+  "author": "John Burch",
+  "license": "ISC",
+  "homepage": "https://github.com/UKGovernmentBEIS/beis-primary-authority-register#readme",
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "dependencies": {
+    "govuk-frontend": "^3.0.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

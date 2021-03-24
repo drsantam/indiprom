@@ -1,0 +1,12 @@
+name: Lingotek Cohesion integration Test Helper
+type: module
+package: Testing
+
+dependencies:
+  - cohesion:cohesion
+  - lingotek:lingotek
+
+# Information added by Drupal.org packaging script on 2021-03-10
+version: '3.5.4'
+project: 'lingotek'
+datestamp: 1615374740
