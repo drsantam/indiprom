@@ -1,0 +1,20 @@
+uuid: a80ec89c-00ce-43e3-83e2-6e089390c0ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.groupoperations
+config_name: block.groupoperations
+document_id: a618556d-2f32-45b6-9be9-cab35aee1854
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 76b36765b76d70a94f4234218f7308d6
+job_id: null
+uploaded_timestamp: 1616284733
+updated_timestamp: 1616559636

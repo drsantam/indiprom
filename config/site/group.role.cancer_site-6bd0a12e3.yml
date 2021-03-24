@@ -1,0 +1,17 @@
+uuid: 019df796-ccb0-46de-a045-926a2fea4508
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+  enforced:
+    config:
+      - user.role.care_provider
+id: cancer_site-6bd0a12e3
+label: 'Care Provider'
+weight: -7
+internal: true
+audience: outsider
+group_type: cancer_site
+permissions_ui: false
+permissions: {  }

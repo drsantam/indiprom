@@ -1,0 +1,17 @@
+uuid: 1abe302b-851f-43e8-b8c9-3cbcb9c2c551
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+  enforced:
+    config:
+      - user.role.care_seeker
+id: cancer_site-2bf8c3bdb
+label: 'Care Seeker'
+weight: -8
+internal: true
+audience: outsider
+group_type: cancer_site
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,20 @@
+uuid: 678e7c88-e9e1-4af6-a86c-91981ef136dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.cancer_site-group_node-webform
+config_name: group_content_type.cancer_site-group_node-webform
+document_id: efa96c0e-ed29-4967-b85b-a40d6529da18
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: c833b91e3d412fc049ec1db17695e321
+job_id: null
+uploaded_timestamp: 1616570482
+updated_timestamp: null

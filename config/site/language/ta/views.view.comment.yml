@@ -1,0 +1,45 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+      fields:
+        subject:
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: செயல்பாடுகள்
+        name_1:
+          separator: ', '
+      use_more_text: மேலும்
+  page_unapproved:
+    display_options:
+      fields:
+        subject:
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: செயல்பாடுகள்
+        name_1:
+          separator: ', '

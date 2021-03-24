@@ -1,0 +1,12 @@
+uuid: a58fd4ca-9619-4dd0-9460-a7511929e8a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_ta_lingotek_cancel_translation_action
+label: 'Cancel media item translation in Lingotek for Tamil'
+type: media
+plugin: 'entity:lingotek_cancel_translation_action:media'
+configuration:
+  language: ta

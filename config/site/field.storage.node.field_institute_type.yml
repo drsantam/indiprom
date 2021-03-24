@@ -1,0 +1,20 @@
+uuid: b1330880-ba20-4921-94b4-9f9150f5b2aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_institute_type
+field_name: field_institute_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

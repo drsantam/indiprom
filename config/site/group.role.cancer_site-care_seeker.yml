@@ -1,0 +1,15 @@
+uuid: 36a832ce-e5f1-419f-84ef-aed513fa0d70
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+id: cancer_site-care_seeker
+label: 'Care Seeker'
+weight: -10
+internal: false
+audience: member
+group_type: cancer_site
+permissions_ui: true
+permissions:
+  - 'view group_node:webform entity'

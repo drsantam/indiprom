@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: వడపోయి
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- అన్ని -'
+      fields:
+        timestamp:
+          label: తేదీ
+        link:
+          label: కార్యాలు
+  page:
+    display_title: పేజీ

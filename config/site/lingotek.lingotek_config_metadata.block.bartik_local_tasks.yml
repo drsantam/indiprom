@@ -1,0 +1,16 @@
+uuid: 5f4ddb20-f3a1-4ae7-83b9-e337858c05b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.bartik_local_tasks
+config_name: block.bartik_local_tasks
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 14b63b70adfeea076a2411da28e2ce76
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

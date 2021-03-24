@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: వడపోయి
+      pager:
+        options:
+          tags:
+            previous: '‹ మునుపటి'
+            next: 'తదుపరి ›'
+          expose:
+            items_per_page_options_all_label: '- అన్ని -'
+      fields:
+        status:
+          label: స్థితి
+      filters:
+        status:
+          expose:
+            label: స్థితి
+  page_2:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ మునుపటి'
+            next: 'తదుపరి ›'
+          expose:
+            items_per_page_options_all_label: '- అన్ని -'

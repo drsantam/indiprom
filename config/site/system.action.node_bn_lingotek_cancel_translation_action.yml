@@ -1,0 +1,12 @@
+uuid: 6e3daa01-969a-4d0a-9f37-e508d6b8e27b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_bn_lingotek_cancel_translation_action
+label: 'Cancel content item translation in Lingotek for Bengali'
+type: node
+plugin: 'entity:lingotek_cancel_translation_action:node'
+configuration:
+  language: bn

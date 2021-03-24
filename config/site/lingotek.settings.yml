@@ -1,0 +1,159 @@
+default:
+  community: 84605d5d-e2e3-4f66-8058-34e40d5ed2e8
+  project: 4fc330f5-6370-44c4-9308-214f8ad4abf7
+  workflow: c675bd20-0688-11e2-892e-0800200c9a66
+  vault: 20e0caa0-5779-4181-8d20-b122e330cb7e
+  filter: drupal_default
+  subfilter: drupal_default
+preference:
+  advanced_parsing: true
+  advanced_taxonomy_terms: true
+  always_show_translate_tabs: false
+  target_download_status: same-as-source
+  append_type_to_title: true
+  enable_download_interim: false
+  enable_download_source: false
+  split_download_all: false
+  contrib:
+    paragraphs:
+      enable_bulk_management: false
+  show_language_labels: false
+  allow_local_editing: false
+  language_specific_profiles: false
+intelligence:
+  business_unit: ''
+  business_division: ''
+  campaign_id: ''
+  campaign_rating: 0
+  channel: ''
+  contact_name: ''
+  contact_email: ''
+  content_description: ''
+  external_style_id: ''
+  purchase_order: ''
+  region: ''
+  use_author: false
+  default_author_email: ''
+  use_author_email: true
+  use_contact_email_for_author: false
+  use_business_unit: false
+  use_business_division: false
+  use_campaign_id: false
+  use_campaign_rating: false
+  use_channel: false
+  use_contact_name: false
+  use_contact_email: false
+  use_content_description: false
+  use_external_style_id: false
+  use_purchase_order: false
+  use_region: false
+  use_base_domain: false
+  use_reference_url: false
+account:
+  host: 'https://myaccount.lingotek.com'
+  authorize_path: auth/authorize.html
+  default_client_id: e39e24c7-6c69-4126-946d-cf8fbff38ef0
+  plan_type: basic
+  resources:
+    community:
+      84605d5d-e2e3-4f66-8058-34e40d5ed2e8: 'Tata Medical Center'
+    project:
+      4fc330f5-6370-44c4-9308-214f8ad4abf7: 'Demo Project'
+    workflow:
+      c675bd20-0688-11e2-892e-0800200c9a66: 'Machine Translation'
+      ddf6e3c0-0688-11e2-892e-0800200c9a66: 'Machine Translation + Post-Edit'
+      6ff1b470-33fd-11e2-81c1-0800200c9a66: 'Machine Translation + Translate'
+      2b5498e0-f3c7-4c49-9afa-cca4b3345af7: 'Translation + 1 review'
+      814172a6-3744-4da7-b932-5857c1c20976: 'Translation + 2 reviews'
+      2210b148-0c44-4ae2-91d0-ca2ee47c069e: 'Translation + 3 reviews'
+      7993b4d7-4ada-46d0-93d5-858db46c4c7d: 'Translation Only'
+    vault:
+      20e0caa0-5779-4181-8d20-b122e330cb7e: 'Demo Vault'
+    filter:
+      4f91482b-5aa1-4a4a-a43f-712af7b39625: okf_json@with-html-subfilter.fprm
+      2e638626-6f51-4bc4-ad19-92026997845d: okf_html@Marketo.fprm
+      bb5a7b2e-1e59-4457-a68e-d9317d87fc28: okf_html@glotpress.fprm
+      0e79f34d-f27b-4a0c-880e-cd9181a5d265: okf_html@drupal8-subfilter.fprm
+      8f0f8537-504b-4e9a-889f-37947990ef50: okf_json@Marketo.fprm
+      0adc9a9d-ca67-4217-9525-d5a6af7ba91f: okf_html@wordpress.fprm
+  access_token: 53513056-3db7-4b66-b1e4-da33eef112c9
+  use_production: true
+  login_id: drsantam@gmail.com
+  callback_url: 'https://indiprom.com/lingotek/notify'
+translate:
+  entity:
+    media:
+      audio:
+        enabled: true
+        field:
+          name: true
+          path: true
+          field_media_audio_file: true
+        profile: manual
+      video:
+        enabled: true
+        field:
+          name: true
+          path: true
+          field_media_video_file: true
+        profile: manual
+    node:
+      article:
+        enabled: true
+        field:
+          title: true
+          path: true
+          body: true
+          field_image: true
+          'field_image:properties':
+            alt: '1'
+            title: '1'
+            file: 0
+        profile: automatic
+      page:
+        enabled: true
+        field:
+          title: true
+          path: true
+          body: true
+        profile: automatic
+      webform:
+        enabled: true
+        field:
+          title: true
+          path: true
+          body: true
+          field_description: true
+        profile: automatic
+  config:
+    block:
+      enabled: true
+      profile: manual
+    group_content_fields:
+      enabled: true
+      profile: automatic
+    group_content_type:
+      enabled: true
+      profile: automatic
+    group_fields:
+      enabled: true
+      profile: automatic
+    group_role:
+      enabled: true
+      profile: automatic
+    group_type:
+      enabled: true
+      profile: automatic
+    media_fields:
+      enabled: true
+      profile: automatic
+    media_type:
+      enabled: true
+      profile: automatic
+    webform:
+      enabled: true
+      profile: manual
+  interface: {  }
+field: null
+_core:
+  default_config_hash: 4JX8sqQTKrol6TxKB_qnnhJghwZO4vaMTPUZKpS8Nu4

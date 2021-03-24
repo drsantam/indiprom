@@ -1,0 +1,14 @@
+uuid: 5a7e0aeb-4140-4e44-82b0-93a1fe2d9ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.care_seeker
+  module:
+    - user
+id: user_remove_role_action.care_seeker
+label: 'Remove the Care Seeker role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: care_seeker

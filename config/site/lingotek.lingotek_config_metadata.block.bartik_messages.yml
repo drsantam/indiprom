@@ -1,0 +1,16 @@
+uuid: ba6706e2-0e67-434c-998a-00f5dbbc19e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.bartik_messages
+config_name: block.bartik_messages
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 9a9c3e378628294effc474fe4052602d
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

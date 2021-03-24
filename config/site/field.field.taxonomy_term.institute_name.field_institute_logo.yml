@@ -1,0 +1,29 @@
+uuid: 5c9a5860-c6d0-42a7-96a7-0fc70cb14a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_institute_logo
+    - media.type.image
+    - taxonomy.vocabulary.institute_name
+id: taxonomy_term.institute_name.field_institute_logo
+field_name: field_institute_logo
+entity_type: taxonomy_term
+bundle: institute_name
+label: 'Institute Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

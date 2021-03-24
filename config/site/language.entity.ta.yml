@@ -1,0 +1,15 @@
+uuid: daafcfbb-a34f-4df6-bc0a-920b000784de
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+third_party_settings:
+  lingotek:
+    disabled: false
+    locale: ta_IN
+id: ta
+label: Tamil
+direction: ltr
+weight: 0
+locked: false

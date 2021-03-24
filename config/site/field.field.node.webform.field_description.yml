@@ -1,0 +1,21 @@
+uuid: d56b4c76-fa9c-4ab3-a9d7-39b245b24777
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.webform
+  module:
+    - text
+id: node.webform.field_description
+field_name: field_description
+entity_type: node
+bundle: webform
+label: Description
+description: 'Please add a brief summary to tell the care seeker as to why we are asking the questions in this form. This will not be displayed with the form but will be made available in the available questionnaires page. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

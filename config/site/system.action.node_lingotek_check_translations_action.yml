@@ -1,0 +1,12 @@
+uuid: 557a6a2d-1bd1-469d-8554-17294da5c2ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_check_translations_action
+label: 'Check status of all content item translations from Lingotek'
+type: node
+plugin: 'entity:lingotek_check_translations_action:node'
+configuration: {  }

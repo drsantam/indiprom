@@ -1,0 +1,12 @@
+uuid: d7fa9158-6b5b-4474-a4ce-8af5a1b8b628
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_check_upload_action
+label: 'Check content item upload status to Lingotek'
+type: node
+plugin: 'entity:lingotek_check_upload_action:node'
+configuration: {  }

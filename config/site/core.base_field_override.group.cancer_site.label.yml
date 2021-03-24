@@ -1,0 +1,18 @@
+uuid: d0e4b364-a909-4fb8-861d-ceeb3569aa8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+id: group.cancer_site.label
+field_name: label
+entity_type: group
+bundle: cancer_site
+label: 'Cancer Site Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

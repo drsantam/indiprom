@@ -1,0 +1,12 @@
+uuid: 68b1d160-5269-4c7e-aebe-50bea994a82d
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_en_lingotek_cancel_translation_action
+label: 'Cancel content item translation in Lingotek for English'
+type: node
+plugin: 'entity:lingotek_cancel_translation_action:node'
+configuration:
+  language: en

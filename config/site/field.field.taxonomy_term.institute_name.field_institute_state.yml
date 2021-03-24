@@ -1,0 +1,21 @@
+uuid: 57c5555a-3fd8-48a1-8c21-8e1229b11d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_institute_state
+    - taxonomy.vocabulary.institute_name
+  module:
+    - options
+id: taxonomy_term.institute_name.field_institute_state
+field_name: field_institute_state
+entity_type: taxonomy_term
+bundle: institute_name
+label: 'State or UT'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

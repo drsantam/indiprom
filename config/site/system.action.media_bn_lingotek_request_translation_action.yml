@@ -1,0 +1,12 @@
+uuid: 1940684c-6d68-4117-8289-1c1060f78852
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_bn_lingotek_request_translation_action
+label: 'Request media item translation to Lingotek for Bengali'
+type: media
+plugin: 'entity:lingotek_request_translation_action:media'
+configuration:
+  language: bn

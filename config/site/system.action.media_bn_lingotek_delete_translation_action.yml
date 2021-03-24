@@ -1,0 +1,12 @@
+uuid: 52568f11-173a-4fb6-8b58-4b12899861ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_bn_lingotek_delete_translation_action
+label: 'Delete media item translation for Bengali'
+type: media
+plugin: 'entity:lingotek_delete_translation_action:media'
+configuration:
+  language: bn

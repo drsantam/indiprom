@@ -1,0 +1,12 @@
+uuid: 5ef56a88-33e0-42f1-b42f-68800eba45a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_ta_lingotek_request_translation_action
+label: 'Request content item translation to Lingotek for Tamil'
+type: node
+plugin: 'entity:lingotek_request_translation_action:node'
+configuration:
+  language: ta

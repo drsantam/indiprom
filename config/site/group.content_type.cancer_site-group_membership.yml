@@ -1,0 +1,16 @@
+uuid: 9cd29b15-c17a-49cd-830b-cf8bab911ff2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+  module:
+    - user
+id: cancer_site-group_membership
+label: 'Cancer Site: Group membership'
+description: 'Adds users to groups as members.'
+group_type: cancer_site
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1

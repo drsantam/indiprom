@@ -1,0 +1,12 @@
+uuid: 95737a15-be40-4c7d-83e9-7dcc3aa35898
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_ta_lingotek_check_translation_action
+label: 'Check media item translation status to Lingotek for Tamil'
+type: media
+plugin: 'entity:lingotek_check_translation_action:media'
+configuration:
+  language: ta

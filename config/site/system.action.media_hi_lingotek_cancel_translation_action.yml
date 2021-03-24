@@ -1,0 +1,12 @@
+uuid: 0bd9d415-42d9-4f13-ab7c-01142d8c494c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_hi_lingotek_cancel_translation_action
+label: 'Cancel media item translation in Lingotek for Hindi'
+type: media
+plugin: 'entity:lingotek_cancel_translation_action:media'
+configuration:
+  language: hi

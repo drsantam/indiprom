@@ -1,0 +1,12 @@
+uuid: 733aa9a4-c800-49ae-a093-d10170725414
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_upload_action
+label: 'Upload content item to Lingotek'
+type: node
+plugin: 'entity:lingotek_upload_action:node'
+configuration: {  }

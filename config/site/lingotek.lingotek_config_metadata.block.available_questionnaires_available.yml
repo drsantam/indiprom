@@ -1,0 +1,20 @@
+uuid: 77843b65-1cf6-4c99-b9e7-c9049476e7c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.available_questionnaires_available
+config_name: block.available_questionnaires_available
+document_id: null
+source_status:
+  en: EDITED
+target_status:
+  ta: REQUEST
+  te: REQUEST
+  bn: REQUEST
+  hi: REQUEST
+profile: null
+hash: 3ed0cf56234fd373bc357cdc81f475a1
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

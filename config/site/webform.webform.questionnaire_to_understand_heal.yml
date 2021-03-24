@@ -1,0 +1,220 @@
+uuid: 5cc5e711-0a60-4f7a-b343-db914cfa4360
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: questionnaire_to_understand_heal
+title: 'PRO-CTCAE  Pelvis'
+description: 'A questionnaire using&nbsp;Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE)'
+category: PROM
+elements: "introduction:\n  '#type': webform_card\n  '#title': Introduction\n  '#title_display': invisible\n  inroduction_text:\n    '#type': processed_text\n    '#text': |\n      <p>As individuals go through treatment for their cancer they sometimes experience different symptoms and side effects. For each question, please select the one response that best describes your experiences over the past 7 days ...</p>\n      \n    '#format': basic_html\ntaste:\n  '#type': webform_card\n  '#title': Taste\n  '#title_display': invisible\n  taste_severity:\n    '#type': radios\n    '#title': 'In the last 7 days, what was the SEVERITY of your PROBLEMS WITH TASTING FOOD OR DRINK at their WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\nappetite1:\n  '#type': webform_card\n  '#title': 'Appetite 1'\n  '#title_display': invisible\n  appetite_loss_severity:\n    '#type': radios\n    '#title': 'In the last 7 days, what was the SEVERITY of your DECREASED APPETITE at their WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\nappetite2:\n  '#type': webform_card\n  '#title': 'Appetite 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"appetite_loss_severity\"]':\n        value:\n          greater: '0'\n  appetite_loss_interference:\n    '#type': radios\n    '#title': 'In the last 7 days, how much did DECREASED APPETITE INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"appetite_loss_severity\"]':\n          value:\n            greater: '0'\nnausea1:\n  '#type': webform_card\n  '#title': 'Nausea 1'\n  '#title_display': invisible\n  nausea_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have NAUSEA?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nnausea2:\n  '#type': webform_card\n  '#title': 'Nausea 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"nausea_frequency\"]':\n        value:\n          greater: '0'\n  nausea_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your NAUSEA at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"nausea_frequency\"]':\n          value:\n            greater: '0'\nvomiting1:\n  '#type': webform_card\n  '#title': 'Vomiting 1'\n  '#title_display': invisible\n  vomiting_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have VOMITING?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nvomiting2:\n  '#type': webform_card\n  '#title': 'Vomiting 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"vomiting_frequency\"]':\n        value:\n          greater: '0'\n  vomiting_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your VOMITING at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"vomiting_frequency\"]':\n          value:\n            greater: '0'\nheartburn1:\n  '#type': webform_card\n  '#title': 'Heartburn 1'\n  '#title_display': invisible\n  heartburn_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have HEARTBURN?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nheartburn2:\n  '#type': webform_card\n  '#title': 'Heartburn 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"heartburn_frequency\"]':\n        value:\n          greater: '0'\n  heartburn_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your HEARTBURN at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"heartburn_frequency\"]':\n          value:\n            greater: '0'\nflatulence:\n  '#type': webform_card\n  '#title': Flatulence\n  '#title_display': invisible\n  flatulence_present:\n    '#type': radios\n    '#title': ' In the last 7 days, did you have any INCREASED PASSING OF GAS (FLATULENCE)?'\n    '#options':\n      - 'No'\n      - 'Yes'\n    '#options_display': buttons\n    '#required': true\nbloating1:\n  '#type': webform_card\n  '#title': 'Bloating 1'\n  '#title_display': invisible\n  bloating_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have BLOATING?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nbloating2:\n  '#type': webform_card\n  '#title': 'Bloating 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"bloating_frequency\"]':\n        value:\n          greater: '0'\n  bloating_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your BLOATING at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"bloating_frequency\"]':\n          value:\n            greater: '0'\nhiccups1:\n  '#type': webform_card\n  '#title': 'Hiccups 1'\n  '#title_display': invisible\n  hiccup_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have HICCUPS?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nhiccups2:\n  '#type': webform_card\n  '#title': 'Hiccups 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"hiccup_frequency\"]':\n        value:\n          greater: '0'\n  hiccup_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your HICCUPS at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"hiccup_frequency\"]':\n          value:\n            greater: '0'\nconstipation:\n  '#type': webform_card\n  '#title': Constipation\n  '#title_display': invisible\n  constipation_severity:\n    '#type': radios\n    '#title': 'In the last 7 days, what was the SEVERITY of your CONSTIPATION at their WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\ndiarrhea:\n  '#type': webform_card\n  '#title': Diarrhea\n  '#title_display': invisible\n  diarrhea_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have LOOSE OR WATERY STOOLS (DIARRHEA/DIARRHOEA)?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\npain1:\n  '#type': webform_card\n  '#title': 'Pain Abdomen 1'\n  '#title_display': invisible\n  abd_pain_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you have PAIN IN THE ABDOMEN (BELLY AREA)?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\npain2:\n  '#type': webform_card\n  '#title': 'Pain Abdomen 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"abd_pain_frequency\"]':\n        value:\n          greater: '0'\n  abd_pain_severity:\n    '#type': radios\n    '#title': ' In the last 7 days, what was the SEVERITY of your PAIN IN THE ABDOMEN (BELLY AREA) at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"abd_pain_frequency\"]':\n          value:\n            greater: '0'\npain3:\n  '#type': webform_card\n  '#title': 'Pain Abdomen 3'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"abd_pain_frequency\"]':\n        value:\n          greater: '0'\n  abd_pain_interference:\n    '#type': radios\n    '#title': 'In the last 7 days, how much did PAIN IN THE ABDOMEN (BELLY AREA) INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"abd_pain_frequency\"]':\n          value:\n            greater: '0'\nbowel_continence1:\n  '#type': webform_card\n  '#title': 'Bowel continence 1'\n  '#title_display': invisible\n  bowel_incontinence_frequency:\n    '#type': radios\n    '#title': 'In the last 7 days, how OFTEN did you LOSE CONTROL OF BOWEL MOVEMENTS?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nbowel_continence2:\n  '#type': webform_card\n  '#title': 'Bowel continence 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"bowel_incontinence_frequency\"]':\n        value:\n          greater: '0'\n  bowel_incontinence_interference:\n    '#type': radios\n    '#title': ' In the last 7 days, how much did LOSS OF CONTROL OF BOWEL MOVEMENTS INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"bowel_incontinence_frequency\"]':\n          value:\n            greater: '0'\nnumbness1:\n  '#type': webform_card\n  '#title': 'Numbness 1'\n  '#title_display': invisible\n  numbness_severity:\n    '#type': radios\n    '#title': 'In the last 7 days, what was the SEVERITY of your NUMBNESS OR TINGLING IN YOUR HANDS OR FEET at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\nnumbness2:\n  '#type': webform_card\n  '#title': 'Numbness 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"numbness_frequency\"]':\n        value:\n          greater: '0'\n  numbness_interference:\n    '#type': radios\n    '#title': ' In the last 7 days, how much did NUMBNESS OR TINGLING IN YOUR HANDS OR FEET INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"numbness_frequency\"]':\n          value:\n            greater: '0'\ndysuria:\n  '#type': webform_card\n  '#title': Dysuria\n  '#title_display': invisible\n  dysuria_severity:\n    '#type': radios\n    '#title': 'In the last 7 days, what was the SEVERITY of your PAIN OR BURNING WITH URINATION at its WORST?'\n    '#options': pro_ctcae_severity_scale\n    '#options_display': buttons\n    '#required': true\nurinary_urgency1:\n  '#type': webform_card\n  '#title': 'Urinary Urgency 1'\n  '#title_display': invisible\n  urinary_urgency_frequency:\n    '#type': radios\n    '#title': ' In the last 7 days, how OFTEN did you feel an URGE TO URINATE ALL OF A SUDDEN?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nurinary_urgency2:\n  '#type': webform_card\n  '#title': 'Urinary Urgency 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"urinary_urgency_frequency\"]':\n        value:\n          greater: '0'\n  urinary_urgency_interference:\n    '#type': radios\n    '#title': 'In the last 7 days, how much did SUDDEN URGES TO URINATE INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"urinary_urgency_frequency\"]':\n          value:\n            greater: '0'\nurinary_frequency1:\n  '#type': webform_card\n  '#title': 'Urinary Frequency 1'\n  '#title_display': invisible\n  urinary_frequency_frequency:\n    '#type': radios\n    '#title': '  In the last 7 days, were there times when you had to URINATE FREQUENTLY?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nurinary_frequency2:\n  '#type': webform_card\n  '#title': 'Urinary Frequency 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"urinary_frequency_frequency\"]':\n        value:\n          greater: '0'\n  urinary_frequency_interference:\n    '#type': radios\n    '#title': 'In the last 7 days, how much did FREQUENT URINATION INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"urinary_frequency_frequency\"]':\n          value:\n            greater: '0'\nurinary_continence1:\n  '#type': webform_card\n  '#title': 'Urinary Continence 1'\n  '#title_display': invisible\n  urinary_continence_frequency:\n    '#type': radios\n    '#title': ' In the last 7 days, how OFTEN did you have LOSS OF CONTROL OF URINE (LEAKAGE)?'\n    '#options': pro_ctcae_frequency_scale\n    '#options_display': buttons\n    '#required': true\nurinary_continence2:\n  '#type': webform_card\n  '#title': 'Urinary Continence 2'\n  '#title_display': invisible\n  '#states':\n    visible:\n      ':input[name=\"urinary_continence_frequency\"]':\n        value:\n          greater: '0'\n  urinary_continence_interference:\n    '#type': radios\n    '#title': '  In the last 7 days, how much did LOSS OF CONTROL OF URINE (LEAKAGE) INTERFERE with your usual or daily activities?'\n    '#options': pro_ctcae_interference_scale\n    '#options_display': buttons\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"urinary_continence_frequency\"]':\n          value:\n            greater: '0'\nthanks:\n  '#type': webform_card\n  '#title': 'Thank You'\n  '#title_display': invisible\n  thank_you:\n    '#type': processed_text\n    '#text': |\n      <p>Thank you for your time. Please click the submit button below to save your answers. Your doctor will see these answers when you are being reviewed.&nbsp;</p>\n      \n    '#format': basic_html"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: true
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 1
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements:
+    inroduction_text: inroduction_text
+    thank_you: thank_you
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: 'Thank you for the response !'
+  confirmation_message: "Thank you for taking the time to answer these questions.<br />\r\nPlease feel free to discuss these and any other issues you may have had with your doctor.<br />\r\n<br />\r\n<strong>We request you to answer these questions once again after one week.&nbsp;</strong>This will help us to understand how useful the system was to you.&nbsp;<br />\r\n<br />\r\n<em>If you had any difficulties while answering these questions or if you have any suggestions regarding the process please do not hesitate to inform us.</em>"
+  confirmation_url: ''
+  confirmation_attributes:
+    class:
+      - 'w3-panel w3-pale-green'
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles:
+      - cancer_site-care_seeker
+  view_any:
+    roles:
+      - local_administrator
+      - administrator
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  update_any:
+    roles:
+      - local_administrator
+      - administrator
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  delete_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  purge_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  view_own:
+    roles:
+      - care_seeker
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  update_own:
+    roles:
+      - care_seeker
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  delete_own:
+    roles:
+      - care_seeker
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  administer:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  test:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer_submissions:
+    group_roles: {  }
+handlers: {  }
+variants: {  }

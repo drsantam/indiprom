@@ -1,0 +1,207 @@
+uuid: 56291d64-a0bc-4978-bbde-18e0d0e98067
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: example_webform_with_buttons
+title: 'Example Webform with buttons'
+description: ''
+category: ''
+elements: "1:\n  '#type': webform_card\n  '#title': '1'\n  '#title_display': invisible\n  how_much_pain_do_you_have:\n    '#type': radios\n    '#title': 'How much pain do you have'\n    '#options': likert_agreement\n    '#options_display': side_by_side\n    '#required': true\n2:\n  '#type': webform_card\n  '#title': '2'\n  '#title_display': invisible\n  how_much_vomiting_you_had:\n    '#type': radios\n    '#title': 'How much vomiting you had'\n    '#options': likert_comparison\n    '#options_display': buttons\n    '#required': true\n3:\n  '#type': webform_card\n  '#title': '3'\n  '#title_display': invisible\n  processed_text:\n    '#type': processed_text\n    '#text': |\n      <p>Thank you. We have saved your responses. Please click the submit button to submit your responses.</p>\n      \n    '#format': basic_html"
+css: ".webform-options-display-buttons [dir=\"ltr\"] .form-type-boolean {\r\n    margin-left: 0rem;\r\n}\r\n"
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: /example
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: true
+  form_unsaved: false
+  form_disable_back: true
+  form_submit_back: true
+  form_autofocus: true
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: true
+  wizard_keyboard: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: false
+  wizard_confirmation_label: ''
+  wizard_track: index
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 2
+  preview_label: ''
+  preview_title: ''
+  preview_message: 'Please confirm that you have responded in the following manner&nbsp;'
+  preview_attributes: {  }
+  preview_excluded_elements:
+    processed_text: processed_text
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - care_seeker
+    users: {  }
+    permissions: {  }
+    group_roles:
+      - cancer_site-care_seeker
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+    group_roles: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer_submissions:
+    group_roles: {  }
+handlers: {  }
+variants: {  }

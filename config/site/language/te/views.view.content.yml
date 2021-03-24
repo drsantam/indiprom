@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: వడపోయి
+      pager:
+        options:
+          tags:
+            previous: '‹ మునుపటి'
+            next: 'తదుపరి ›'
+            first: '« మొదటి'
+            last: 'చివర »'
+      fields:
+        status:
+          label: స్థితి
+        operations:
+          label: కార్యాలు
+      filters:
+        status:
+          expose:
+            label: స్థితి
+  page_1:
+    display_title: పేజీ

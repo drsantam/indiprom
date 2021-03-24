@@ -1,0 +1,19 @@
+uuid: e2a47751-b020-4f26-9d27-b77a10144aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+    - node.type.webform
+  module:
+    - gnode
+    - node
+id: cancer_site-group_node-webform
+label: 'Cancer Site: Group node (Webform)'
+description: 'Adds <em class="placeholder">Webform</em> content to groups both publicly and privately.'
+group_type: cancer_site
+content_plugin: 'group_node:webform'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

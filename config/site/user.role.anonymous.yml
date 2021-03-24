@@ -1,0 +1,14 @@
+uuid: db07d424-6286-4c26-bd41-c0fd1b8350a2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access pwa'
+  - 'view media'

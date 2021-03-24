@@ -1,0 +1,22 @@
+uuid: 9d1b807a-299c-46c2-a877-6792dac72c67
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal8_w3css_theme
+_core:
+  default_config_hash: yPe8aG4-T4XsmxadKilWNIHBBZQBkV6AqEiSoijGxT8
+id: drupal8_w3css_theme_breadcrumbs
+theme: drupal8_w3css_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

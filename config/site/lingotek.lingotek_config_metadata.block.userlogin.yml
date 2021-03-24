@@ -1,0 +1,20 @@
+uuid: 2397e48b-96e2-4385-8302-3cd129a726f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.userlogin
+config_name: block.userlogin
+document_id: 22f49898-ab61-4375-b864-7cc5515da7c2
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 5795251928b522cbad4a9cbf37eef112
+job_id: null
+uploaded_timestamp: 1616118820
+updated_timestamp: 1616118838

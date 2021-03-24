@@ -1,0 +1,12 @@
+uuid: e510045b-11b0-4ff5-8615-1279e9634f50
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_hi_lingotek_check_translation_action
+label: 'Check media item translation status to Lingotek for Hindi'
+type: media
+plugin: 'entity:lingotek_check_translation_action:media'
+configuration:
+  language: hi

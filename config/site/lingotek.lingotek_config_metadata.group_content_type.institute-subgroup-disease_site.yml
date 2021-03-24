@@ -1,0 +1,18 @@
+uuid: 93052ba7-b107-41d8-8875-dd47d2b3b7de
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.institute-subgroup-disease_site
+config_name: group_content_type.institute-subgroup-disease_site
+document_id: 067c4f6f-1eda-4208-a9ad-a319ed159c84
+source_status:
+  en: CURRENT
+target_status:
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 3417584ea8779cd9b6caf0a5f3cce3b0
+job_id: null
+uploaded_timestamp: 1615993168
+updated_timestamp: 1615993196

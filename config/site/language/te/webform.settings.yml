@@ -1,0 +1,5 @@
+settings:
+  default_delete_button_label: తొలగించు
+  dialog_options:
+    normal:
+      title: సాధారణ

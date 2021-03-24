@@ -1,0 +1,16 @@
+uuid: 096341d4-0705-4eb6-bf85-7cea50f9377b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_media_video_file
+config_name: field_config.media.video.field_media_video_file
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: b547132d360b0fc3d63e5689bbdf288a
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

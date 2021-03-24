@@ -1,0 +1,12 @@
+uuid: 153db92f-d718-4fad-b961-7a3235e20e7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_te_lingotek_cancel_translation_action
+label: 'Cancel content item translation in Lingotek for Telugu'
+type: node
+plugin: 'entity:lingotek_cancel_translation_action:node'
+configuration:
+  language: te

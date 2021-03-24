@@ -1,0 +1,11 @@
+settings:
+  default_delete_button_label: 'মুছে ফেল'
+  default_preview_next_button_label: 'প্রাক-প্রদর্শন (প্রিভিউ)'
+  default_preview_label: 'প্রাক-প্রদর্শন (প্রিভিউ)'
+  default_preview_title: '[webform:title]: প্রাক-প্রদর্শন (প্রিভিউ)'
+  default_preview_message: 'আপনার উত্তর গুলি আবার দেখে নিন. যতক্ষণ না আপনি "জমা দিন" বোতাম টিপবেন ততক্ষন আপনার উত্তরগুলি সংরক্ষণ করা হবে না!'
+  default_previous_submission_message: 'আপনি এই প্রশ্নাবলী আগে ভরেছেন। <a href="#">আপনার আগের উত্তর দেখুন</a>'
+  default_previous_submissions_message: 'আপনি এই প্রশ্নাবলী আগে ভরেছেন। <a href="#">আপনার আগের উত্তর গুলি দেখুন</a>'
+  default_autofill_message: 'আমরা এই প্রশ্নাবলী তে আপনার আগের বারের  দেয়া উত্তর দেখিয়ে দিয়েছি। যদি এইবার আপনার কোনো উত্তর বদলানোর থাকে তাহলে সঠিক উত্তর টি চয়ন করুন'
+element:
+  default_more_title: আরও

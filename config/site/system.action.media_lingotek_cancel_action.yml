@@ -1,0 +1,12 @@
+uuid: 72b600ca-14f9-4e51-bbb1-a9d5532857f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_cancel_action
+label: 'Cancel media item from Lingotek'
+type: media
+plugin: 'entity:lingotek_cancel_action:media'
+configuration: {  }

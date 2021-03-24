@@ -1,0 +1,6 @@
+roles:
+  care_seeker: unsafe
+  care_provider: unsafe
+  local_administrator: unsafe
+_core:
+  default_config_hash: UiTY9bhUKWJOIWDlOKM3akeeyHuJJRspXETsv3SY6jw

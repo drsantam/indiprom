@@ -1,0 +1,14 @@
+uuid: 01095702-0f33-469f-882e-c770c4988143
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.care_provider
+  module:
+    - user
+id: user_remove_role_action.care_provider
+label: 'Remove the Care Provider role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: care_provider

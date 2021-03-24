@@ -1,0 +1,12 @@
+uuid: c09b8c10-e012-4c51-ae45-e065d3bc188c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_request_translations_action
+label: 'Request all media item translations to Lingotek'
+type: media
+plugin: 'entity:lingotek_request_translations_action:media'
+configuration: {  }

@@ -1,0 +1,14 @@
+uuid: bfc1ec17-f570-455b-9c9a-77d5a7da6dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.care_provider
+  module:
+    - user
+id: user_add_role_action.care_provider
+label: 'Add the Care Provider role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: care_provider

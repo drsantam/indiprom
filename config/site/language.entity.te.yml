@@ -1,0 +1,15 @@
+uuid: 1b61634a-8402-429a-be34-c497a3c167d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+third_party_settings:
+  lingotek:
+    disabled: false
+    locale: te_IN
+id: te
+label: Telugu
+direction: ltr
+weight: 0
+locked: false

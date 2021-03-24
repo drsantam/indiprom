@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      fields:
+        changed:
+          separator: ', '

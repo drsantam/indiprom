@@ -1,0 +1,12 @@
+uuid: 6e4bb89c-d332-41a5-ac26-5ffbd8d6f907
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_request_translations_action
+label: 'Request all content item translations to Lingotek'
+type: node
+plugin: 'entity:lingotek_request_translations_action:node'
+configuration: {  }

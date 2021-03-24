@@ -1,0 +1,14 @@
+uuid: d967b6f7-d01a-4adc-b88e-1548e39f0e3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+id: cancer_site-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: cancer_site
+permissions_ui: true
+permissions: {  }

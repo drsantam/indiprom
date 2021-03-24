@@ -1,0 +1,13 @@
+display:
+  page_1:
+    display_options:
+      menu:
+        title: 'আপনার জন্যে উপলব্ধ প্রশ্নাবলী'
+      fields:
+        view_node:
+          text: 'এখানে ক্লিক বা ট্যাপ করুন'
+  default:
+    display_options:
+      header:
+        result:
+          content: 'আপনার স্বাস্থ্য সম্পর্কিত সমস্যার ব্যাপারে জানতে @total প্রশ্নাবলী উপলব্ধ আছে।  বাটন এ ক্লিক করে  বা ট্যাপ করে আমাদের এই সমস্যার সম্পর্কে জানান'

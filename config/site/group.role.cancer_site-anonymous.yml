@@ -1,0 +1,14 @@
+uuid: 1634c5e3-ec03-4770-8d81-c05745435d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+id: cancer_site-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: cancer_site
+permissions_ui: true
+permissions: {  }

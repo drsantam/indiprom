@@ -1,0 +1,16 @@
+uuid: 42ee0c04-acdb-4305-b7b2-eb12f1746e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.bartik_breadcrumbs
+config_name: block.bartik_breadcrumbs
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 7f4d44f7ad78543cf04ea68311b89088
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

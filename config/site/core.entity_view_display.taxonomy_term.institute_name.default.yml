@@ -1,0 +1,172 @@
+uuid: 4bec4e02-faf1-4d41-9565-c42bb70ee4e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.institute_name.field_insitute_website
+    - field.field.taxonomy_term.institute_name.field_institute_logo
+    - field.field.taxonomy_term.institute_name.field_institute_state
+    - taxonomy.vocabulary.institute_name
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+        components:
+          1ff4056d-b1e7-440a-afd5-fd95c18dfecb:
+            uuid: 1ff4056d-b1e7-440a-afd5-fd95c18dfecb
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:institute_name:field_insitute_website'
+              label: 'Institute Website'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: nofollow
+                  target: _blank
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          22124db5-8e31-40b7-97fc-2d4f63070c4d:
+            uuid: 22124db5-8e31-40b7-97fc-2d4f63070c4d
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:institute_name:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          00c18da5-bbdb-4a9e-a372-f91b69442ed9:
+            uuid: 00c18da5-bbdb-4a9e-a372-f91b69442ed9
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:institute_name:field_institute_state'
+              label: State
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          0b2548ef-b4fc-4581-8c4f-66e69e53b801:
+            uuid: 0b2548ef-b4fc-4581-8c4f-66e69e53b801
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:institute_name:field_institute_logo'
+              label: 'Institute Logo'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          55a1244c-8d96-4cb1-b15f-c5c1795bd72a:
+            uuid: 55a1244c-8d96-4cb1-b15f-c5c1795bd72a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:institute_name:description'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.institute_name.default
+targetEntityType: taxonomy_term
+bundle: institute_name
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_insitute_website:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_institute_logo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_institute_state:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

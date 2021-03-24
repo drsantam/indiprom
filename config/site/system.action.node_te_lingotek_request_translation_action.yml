@@ -1,0 +1,12 @@
+uuid: 599ba398-8652-456a-9c81-2e5242dff68b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_te_lingotek_request_translation_action
+label: 'Request content item translation to Lingotek for Telugu'
+type: node
+plugin: 'entity:lingotek_request_translation_action:node'
+configuration:
+  language: te

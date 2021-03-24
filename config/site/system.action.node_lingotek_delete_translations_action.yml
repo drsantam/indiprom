@@ -1,0 +1,12 @@
+uuid: e1883455-6c1e-48c4-8247-a73199b748fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_delete_translations_action
+label: 'Delete all content item translations'
+type: node
+plugin: 'entity:lingotek_delete_translations_action:node'
+configuration: {  }

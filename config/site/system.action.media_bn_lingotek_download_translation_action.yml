@@ -1,0 +1,12 @@
+uuid: bac68de4-7805-4ad6-8eeb-fadfcaacbcd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_bn_lingotek_download_translation_action
+label: 'Download media item translation to Lingotek for Bengali'
+type: media
+plugin: 'entity:lingotek_download_translation_action:media'
+configuration:
+  language: bn

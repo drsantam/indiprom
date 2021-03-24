@@ -1,0 +1,12 @@
+uuid: c768124e-9731-4752-aa81-0480b90a9af8
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_hi_lingotek_delete_translation_action
+label: 'Delete content item translation for Hindi'
+type: node
+plugin: 'entity:lingotek_delete_translation_action:node'
+configuration:
+  language: hi

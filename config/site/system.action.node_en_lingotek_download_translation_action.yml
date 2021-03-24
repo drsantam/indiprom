@@ -1,0 +1,12 @@
+uuid: 84ce877a-ceaa-428a-bdcc-245a45717157
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_en_lingotek_download_translation_action
+label: 'Download content item translation to Lingotek for English'
+type: node
+plugin: 'entity:lingotek_download_translation_action:node'
+configuration:
+  language: en

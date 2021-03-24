@@ -1,0 +1,16 @@
+uuid: a3a45c11-743a-4aa2-bc59-acb5a174d595
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.bartik_local_actions
+config_name: block.bartik_local_actions
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 74b826a0be13a2068e81542bd76c0072
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

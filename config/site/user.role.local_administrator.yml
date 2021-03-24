@@ -1,0 +1,39 @@
+uuid: ed21cc4f-8728-4a8f-a322-5089a2edb5b9
+langcode: en
+status: true
+dependencies: {  }
+id: local_administrator
+label: 'Local Administrator'
+weight: -6
+is_admin: null
+permissions:
+  - 'access pbt settings'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'allow empty user mail'
+  - 'assign care_provider role'
+  - 'assign care_seeker role'
+  - 'cancel users by role'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create users'
+  - 'create video media'
+  - 'create webform'
+  - 'create webform content'
+  - 'delete media'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit users by role'
+  - 'role-assign users by role'
+  - 'show term permissions on user edit page'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'view users by role'

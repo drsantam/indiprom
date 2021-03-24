@@ -1,0 +1,16 @@
+uuid: 8042d2f5-d633-4bc4-8a53-98a21280d8c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.example_webform_with_buttons
+config_name: webform.example_webform_with_buttons
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 09c1075e414c54a089fdf25103ed1c7e
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

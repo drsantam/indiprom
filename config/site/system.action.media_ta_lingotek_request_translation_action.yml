@@ -1,0 +1,12 @@
+uuid: 10231afb-1e61-42e5-820d-f90f9416e32c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_ta_lingotek_request_translation_action
+label: 'Request media item translation to Lingotek for Tamil'
+type: media
+plugin: 'entity:lingotek_request_translation_action:media'
+configuration:
+  language: ta

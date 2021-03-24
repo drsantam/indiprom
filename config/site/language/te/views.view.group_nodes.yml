@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            first: '« మొదటి'
+            last: 'చివర »'
+          expose:
+            items_per_page_options_all_label: '- అన్ని -'
+      fields:
+        status:
+          label: స్థితి
+        dropbutton:
+          label: కార్యాలు
+  page_1:
+    display_title: పేజీ

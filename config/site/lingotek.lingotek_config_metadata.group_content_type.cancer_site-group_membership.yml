@@ -1,0 +1,20 @@
+uuid: 81b6a5c2-cfb9-4af2-ac65-631b37a63b87
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.cancer_site-group_membership
+config_name: group_content_type.cancer_site-group_membership
+document_id: 4f2e738e-e23e-4c27-9ae8-532675720173
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 971094a456376b17f37e272c6362a4fd
+job_id: null
+uploaded_timestamp: 1616570329
+updated_timestamp: 1616570494

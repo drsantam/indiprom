@@ -1,0 +1,16 @@
+uuid: 2edcfc68-1d73-44cb-a7cb-9fd5c1aee2ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.audio.field_media_audio_file
+config_name: field_config.media.audio.field_media_audio_file
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: b999aa5de6a725195daff61da647afae
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

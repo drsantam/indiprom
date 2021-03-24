@@ -1,0 +1,29 @@
+uuid: beb3943e-f144-4009-b90e-17f005c74de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cancer_site_type
+    - node.type.webform
+    - taxonomy.vocabulary.cancer_site
+id: node.webform.field_cancer_site_type
+field_name: field_cancer_site_type
+entity_type: node
+bundle: webform
+label: 'Cancer Site Type'
+description: 'Please select the cancer sites to which this questionnaire should be visible. Please remember to make a selection such that the form is displayed to the required users only. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cancer_site: cancer_site
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 57de714c-02a3-40df-8ec3-32ff005ce8f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.drupal8_w3css_theme_main_menu
+config_name: block.drupal8_w3css_theme_main_menu
+document_id: 891d0085-8b78-448c-875d-e0dbd658d61c
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 5a46bf4bab04ae1834ee579bdcb13037
+job_id: null
+uploaded_timestamp: 1616284554
+updated_timestamp: 1616559636

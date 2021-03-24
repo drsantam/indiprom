@@ -1,0 +1,16 @@
+display:
+  page_1:
+    display_options:
+      menu:
+        title: 'आपके लिए उपलब्ध प्रश्नावली'
+      fields:
+        view_node:
+          text: 'यहाँ क्लिक अथवा टैप करे'
+  available_questionnaires_block:
+    display_options:
+      block_description: 'आपके लिए उपलब्ध प्रश्नावली'
+  default:
+    display_options:
+      header:
+        result:
+          content: 'आपके स्वास्थ्य से सम्बंधित असुविधाओं के बारे में जानने के लिए @total प्रश्नावली उपलब्ध है।  बटन पे क्लिक कर के अथवा टैप कर के हमें इन समस्याओ के बारे में बताये '

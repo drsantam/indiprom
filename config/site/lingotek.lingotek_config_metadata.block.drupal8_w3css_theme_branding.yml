@@ -1,0 +1,20 @@
+uuid: d4d56bc3-f058-4801-ac31-85279132e386
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.drupal8_w3css_theme_branding
+config_name: block.drupal8_w3css_theme_branding
+document_id: d0d31d08-5410-4db8-aa8c-fa9b7d97cf46
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 29e67d86abe8dfcb9b0026a7938350e0
+job_id: null
+uploaded_timestamp: 1616284554
+updated_timestamp: 1616559636

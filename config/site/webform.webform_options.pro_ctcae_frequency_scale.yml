@@ -1,0 +1,9 @@
+uuid: 69c2d640-89c1-4464-8d9c-b372cdd95ad2
+langcode: en
+status: true
+dependencies: {  }
+id: pro_ctcae_frequency_scale
+label: 'PRO-CTCAE Frequency Scale'
+category: PRO-CTCAE
+likert: true
+options: "- Never\n- Rarely\n- Occassionally\n- Frequently\n- 'Almost Constantly'"

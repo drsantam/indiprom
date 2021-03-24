@@ -1,0 +1,12 @@
+uuid: a9223d0c-14e8-4c0a-a1f2-52aae8683aaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_download_translations_action
+label: 'Download all content item translations from Lingotek'
+type: node
+plugin: 'entity:lingotek_download_translations_action:node'
+configuration: {  }

@@ -1,0 +1,12 @@
+uuid: 2d7b0c40-9504-4300-921c-4cc68f8a3b11
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - node
+id: node_lingotek_cancel_action
+label: 'Cancel content item from Lingotek'
+type: node
+plugin: 'entity:lingotek_cancel_action:node'
+configuration: {  }

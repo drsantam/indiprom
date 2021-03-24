@@ -1,0 +1,12 @@
+uuid: b51e3398-cf98-4f9d-ae49-3f44dd11315d
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_upload_action
+label: 'Upload media item to Lingotek'
+type: media
+plugin: 'entity:lingotek_upload_action:media'
+configuration: {  }

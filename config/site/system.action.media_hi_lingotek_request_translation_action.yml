@@ -1,0 +1,12 @@
+uuid: b8394965-43ab-4ba2-aff6-19bbd1d80467
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_hi_lingotek_request_translation_action
+label: 'Request media item translation to Lingotek for Hindi'
+type: media
+plugin: 'entity:lingotek_request_translation_action:media'
+configuration:
+  language: hi

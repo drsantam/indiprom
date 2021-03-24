@@ -1,0 +1,20 @@
+uuid: 0a900b11-5823-45bf-9c35-c71f00726cbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - drupal8_w3css_theme
+id: languageswitcher
+theme: drupal8_w3css_theme
+region: bottom_second
+weight: -7
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Change The Language'
+  provider: language
+  label_display: visible
+visibility: {  }

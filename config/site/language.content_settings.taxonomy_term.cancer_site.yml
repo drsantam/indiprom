@@ -1,0 +1,16 @@
+uuid: 9f7408fa-2ac5-4e94-a82e-4660e07ec69e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cancer_site
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.cancer_site
+target_entity_type_id: taxonomy_term
+target_bundle: cancer_site
+default_langcode: site_default
+language_alterable: false

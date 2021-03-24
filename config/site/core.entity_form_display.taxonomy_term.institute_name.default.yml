@@ -1,0 +1,77 @@
+uuid: 61408d46-de72-4aa0-854b-e54116c929eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.institute_name.field_insitute_website
+    - field.field.taxonomy_term.institute_name.field_institute_logo
+    - field.field.taxonomy_term.institute_name.field_institute_state
+    - taxonomy.vocabulary.institute_name
+  module:
+    - link
+    - media_library
+    - path
+    - text
+id: taxonomy_term.institute_name.default
+targetEntityType: taxonomy_term
+bundle: institute_name
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_insitute_website:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_institute_logo:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_institute_state:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+hidden: {  }

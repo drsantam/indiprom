@@ -1,0 +1,12 @@
+uuid: f7408a17-d3fd-4e2d-b809-b833869ae002
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_bn_lingotek_check_translation_action
+label: 'Check media item translation status to Lingotek for Bengali'
+type: media
+plugin: 'entity:lingotek_check_translation_action:media'
+configuration:
+  language: bn

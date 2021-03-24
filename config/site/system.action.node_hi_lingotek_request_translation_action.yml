@@ -1,0 +1,12 @@
+uuid: d690d94b-1438-44a1-914f-f0fd133aeebd
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_hi_lingotek_request_translation_action
+label: 'Request content item translation to Lingotek for Hindi'
+type: node
+plugin: 'entity:lingotek_request_translation_action:node'
+configuration:
+  language: hi

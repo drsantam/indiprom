@@ -1,0 +1,110 @@
+uuid: 5fadc7e1-183a-48a3-97b5-7d80f587fd27
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.field_cancer_site_type
+    - field.field.node.webform.field_description
+    - field.field.node.webform.field_institute_type
+    - field.field.node.webform.field_webform_image
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-67
+        components:
+          cacb2ec1-65a4-486f-975e-57a7ecf491a4:
+            uuid: cacb2ec1-65a4-486f-975e-57a7ecf491a4
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:webform:field_webform_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: media_image_thumbnail
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          b86e0412-202e-4b43-b497-4ad2b0b9da8d:
+            uuid: b86e0412-202e-4b43-b497-4ad2b0b9da8d
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:webform:field_description'
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          165f3099-91e3-4c57-8f6c-cade784b0a35:
+            uuid: 165f3099-91e3-4c57-8f6c-cade784b0a35
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:webform:links'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+_core:
+  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  field_description:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_webform_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: media_image_thumbnail
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cancer_site_type: true
+  field_institute_type: true
+  langcode: true
+  webform: true

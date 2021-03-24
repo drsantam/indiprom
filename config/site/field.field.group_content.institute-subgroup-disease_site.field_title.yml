@@ -1,0 +1,19 @@
+uuid: fe9b8708-870d-4ac7-958f-993b07aa47ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.field_title
+    - group.content_type.institute-subgroup-disease_site
+id: group_content.institute-subgroup-disease_site.field_title
+field_name: field_title
+entity_type: group_content
+bundle: institute-subgroup-disease_site
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

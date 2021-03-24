@@ -1,0 +1,12 @@
+uuid: 3872d55f-7c49-4a98-a8c9-1e3810380bc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_te_lingotek_check_translation_action
+label: 'Check media item translation status to Lingotek for Telugu'
+type: media
+plugin: 'entity:lingotek_check_translation_action:media'
+configuration:
+  language: te

@@ -1,0 +1,12 @@
+uuid: 41651447-7a54-4970-a9b9-901cd4ea1cda
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_check_upload_action
+label: 'Check media item upload status to Lingotek'
+type: media
+plugin: 'entity:lingotek_check_upload_action:media'
+configuration: {  }

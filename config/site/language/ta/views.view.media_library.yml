@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+  page:
+    display_title: பக்கம்
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: மாற்று
+        delete_media:
+          text: அழி

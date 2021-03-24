@@ -1,0 +1,12 @@
+uuid: e65a57e4-a4c5-48a8-8c4e-14ba50172e97
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_check_translations_action
+label: 'Check status of all media item translations from Lingotek'
+type: media
+plugin: 'entity:lingotek_check_translations_action:media'
+configuration: {  }

@@ -1,0 +1,12 @@
+uuid: baa81fb3-a2d2-4e51-bc69-30e8068dedee
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+    - media
+id: media_lingotek_download_translations_action
+label: 'Download all media item translations from Lingotek'
+type: media
+plugin: 'entity:lingotek_download_translations_action:media'
+configuration: {  }

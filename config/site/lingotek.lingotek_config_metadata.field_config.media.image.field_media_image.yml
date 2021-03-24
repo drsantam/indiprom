@@ -1,0 +1,16 @@
+uuid: 535b6de8-aa8a-4b1d-b45a-050ded9e4237
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+config_name: field_config.media.image.field_media_image
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 8dc928d8da945a4d70ea50b2a2fefe70
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

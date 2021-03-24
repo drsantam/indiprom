@@ -1,0 +1,12 @@
+uuid: 75fd6315-79fa-4711-bc2a-d956b2439b8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_te_lingotek_cancel_translation_action
+label: 'Cancel media item translation in Lingotek for Telugu'
+type: media
+plugin: 'entity:lingotek_cancel_translation_action:media'
+configuration:
+  language: te

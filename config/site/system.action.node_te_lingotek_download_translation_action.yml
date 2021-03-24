@@ -1,0 +1,12 @@
+uuid: 4a5a9f6d-7a98-4a28-9f49-51ff38537fe6
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_te_lingotek_download_translation_action
+label: 'Download content item translation to Lingotek for Telugu'
+type: node
+plugin: 'entity:lingotek_download_translation_action:node'
+configuration:
+  language: te

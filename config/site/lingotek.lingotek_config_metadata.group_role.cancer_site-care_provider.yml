@@ -1,0 +1,20 @@
+uuid: a27d5c3f-7b2b-421e-9dd1-956c8a8c0ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.role.cancer_site-care_provider
+config_name: group_role.cancer_site-care_provider
+document_id: c93c81bc-648a-4c1e-a921-6de137ba7a96
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 0c7fb4d5eae15d2c333edbb928ca7ba3
+job_id: null
+uploaded_timestamp: 1616570401
+updated_timestamp: 1616571106

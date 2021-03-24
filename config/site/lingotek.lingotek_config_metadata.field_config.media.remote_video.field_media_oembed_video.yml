@@ -1,0 +1,16 @@
+uuid: ee4651bc-a6af-409f-a2e1-4b9e91e7f7e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_media_oembed_video
+config_name: field_config.media.remote_video.field_media_oembed_video
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 8f014377ce3f9cfdc9b5ce86302243cb
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

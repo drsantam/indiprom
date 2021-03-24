@@ -1,0 +1,11 @@
+uuid: eefc8202-a90d-4331-aca0-0103fd8a350b
+langcode: en
+status: true
+dependencies: {  }
+id: care_seeker
+label: 'Care Seeker'
+weight: -8
+is_admin: null
+permissions:
+  - 'access site-wide contact form'
+  - 'access webform submission user'

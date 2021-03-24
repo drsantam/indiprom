@@ -1,0 +1,11 @@
+uuid: 199d3ac7-04fc-4657-ad69-b24b9d4a58ba
+langcode: en
+status: true
+dependencies: {  }
+id: care_provider
+label: 'Care Provider'
+weight: -7
+is_admin: null
+permissions:
+  - 'access site-wide contact form'
+  - 'access user profiles'

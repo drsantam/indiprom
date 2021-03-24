@@ -1,0 +1,17 @@
+uuid: 40938cde-1a08-491e-8efb-7c1519cfd758
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+  enforced:
+    config:
+      - user.role.local_administrator
+id: cancer_site-eb67e122e
+label: 'Local Administrator'
+weight: -6
+internal: true
+audience: outsider
+group_type: cancer_site
+permissions_ui: false
+permissions: {  }

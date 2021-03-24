@@ -1,0 +1,14 @@
+uuid: a64c5ed6-9573-4edd-9733-cd43e2a56ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.local_administrator
+  module:
+    - user
+id: user_add_role_action.local_administrator
+label: 'Add the Local Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: local_administrator

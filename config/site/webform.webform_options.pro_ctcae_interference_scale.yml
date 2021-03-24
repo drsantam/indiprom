@@ -1,0 +1,9 @@
+uuid: 70c7b4be-a072-425c-8446-c66f689baad8
+langcode: en
+status: true
+dependencies: {  }
+id: pro_ctcae_interference_scale
+label: 'PRO-CTCAE Interference Scale'
+category: PRO-CTCAE
+likert: true
+options: "- 'Not at all'\n- 'A little bit'\n- Somewhat\n- 'Quite a bit'\n- 'Very much'"

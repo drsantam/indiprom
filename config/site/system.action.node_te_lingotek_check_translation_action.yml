@@ -1,0 +1,12 @@
+uuid: d4872b0e-72b2-4fe9-8e80-54662346291e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_te_lingotek_check_translation_action
+label: 'Check content item translation status to Lingotek for Telugu'
+type: node
+plugin: 'entity:lingotek_check_translation_action:node'
+configuration:
+  language: te

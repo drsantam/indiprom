@@ -1,0 +1,20 @@
+uuid: 971ac7c6-dc2e-436c-bcc6-563007720e92
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: 7qJqToD1OQLAyeswpmg7M0LRxQlw1URQkJDWUJCnmR8
+name: media_library
+label: 'Media Library thumbnail (150x150)'
+effects:
+  75b076a8-1234-4b42-85db-bf377c4d8d5f:
+    uuid: 75b076a8-1234-4b42-85db-bf377c4d8d5f
+    id: image_scale
+    weight: 0
+    data:
+      width: 150
+      height: 150
+      upscale: false

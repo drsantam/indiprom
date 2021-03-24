@@ -1,0 +1,31 @@
+uuid: d2927d15-2a56-4af3-984a-d2c4ffc335d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.institute-subgroup-disease_site.field_title
+    - group.content_type.institute-subgroup-disease_site
+id: group_content.institute-subgroup-disease_site.default
+targetEntityType: group_content
+bundle: institute-subgroup-disease_site
+mode: default
+content:
+  entity_id:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  uid: true

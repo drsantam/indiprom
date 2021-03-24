@@ -1,0 +1,16 @@
+uuid: 6da721d0-b0cd-415e-a26e-9beb120a9581
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+config_name: webform.contact
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 90cebbb8de2c188accf5c0997ceddbfa
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

@@ -1,0 +1,8 @@
+uuid: fe1ec4bc-ba90-4538-9c30-5976b1e769ef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cancer Site'
+vid: cancer_site
+description: 'Taxonomy of Cancer Sites for ensuring that webforms get displayed to patients properly'
+weight: 0

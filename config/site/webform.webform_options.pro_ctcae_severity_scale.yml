@@ -1,0 +1,9 @@
+uuid: 48226e8b-640c-4633-9f6d-10f9dabf3a55
+langcode: en
+status: true
+dependencies: {  }
+id: pro_ctcae_severity_scale
+label: 'PRO-CTCAE Severity Scale'
+category: PRO-CTCAE
+likert: true
+options: "- None\n- Mild\n- Moderate\n- Severe\n- 'Very Severe'"

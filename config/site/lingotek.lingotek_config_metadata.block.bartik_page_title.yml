@@ -1,0 +1,16 @@
+uuid: 7a6227e5-3e8a-490b-a22e-9d01ad88d86b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.bartik_page_title
+config_name: block.bartik_page_title
+document_id: null
+source_status:
+  en: ERROR
+target_status: {  }
+profile: null
+hash: 7dadd3accd626295d7066ec845665ebf
+job_id: ''
+uploaded_timestamp: null
+updated_timestamp: null

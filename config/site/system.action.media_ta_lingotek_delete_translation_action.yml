@@ -1,0 +1,12 @@
+uuid: 9be468cc-310f-4fb5-a57e-5f6c307965ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: media_ta_lingotek_delete_translation_action
+label: 'Delete media item translation for Tamil'
+type: media
+plugin: 'entity:lingotek_delete_translation_action:media'
+configuration:
+  language: ta

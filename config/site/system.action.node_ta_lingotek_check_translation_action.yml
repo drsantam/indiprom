@@ -1,0 +1,12 @@
+uuid: 7755ffc8-b1f6-4a48-a387-5c4ef38d0eb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_ta_lingotek_check_translation_action
+label: 'Check content item translation status to Lingotek for Tamil'
+type: node
+plugin: 'entity:lingotek_check_translation_action:node'
+configuration:
+  language: ta

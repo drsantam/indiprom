@@ -1,0 +1,17 @@
+uuid: 27aa2902-481e-4d90-9314-3759c513663e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+  enforced:
+    config:
+      - user.role.administrator
+id: cancer_site-a416e6833
+label: Administrator
+weight: -5
+internal: true
+audience: outsider
+group_type: cancer_site
+permissions_ui: false
+permissions: {  }

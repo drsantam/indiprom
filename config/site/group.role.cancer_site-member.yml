@@ -1,0 +1,14 @@
+uuid: 0b247c3c-1fab-49e0-958b-ab8eea99e5de
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.cancer_site
+id: cancer_site-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: cancer_site
+permissions_ui: true
+permissions: {  }

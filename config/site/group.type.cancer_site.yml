@@ -1,0 +1,11 @@
+uuid: ced9f95b-1c12-45d6-bea5-cc04f1803610
+langcode: en
+status: true
+dependencies: {  }
+id: cancer_site
+label: 'Cancer Site'
+description: 'Group to allow grouping of patients based on disease site being treated. '
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - cancer_site-admin

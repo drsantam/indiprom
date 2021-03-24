@@ -1,0 +1,47 @@
+uuid: 52093f22-37c4-4efa-b995-094c97324ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_cancer_site
+    - field.field.user.user.field_date_treatment_start
+    - field.field.user.user.field_registering_institute
+  module:
+    - datetime
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_treatment_start:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_registering_institute:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_cancer_site: true
+  langcode: true
+  path: true
+  timezone: true

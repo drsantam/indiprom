@@ -1,0 +1,12 @@
+uuid: 2cc0f9d7-2a59-4a1c-b568-acc4a130f7be
+langcode: en
+status: true
+dependencies:
+  module:
+    - lingotek
+id: node_hi_lingotek_download_translation_action
+label: 'Download content item translation to Lingotek for Hindi'
+type: node
+plugin: 'entity:lingotek_download_translation_action:node'
+configuration:
+  language: hi

@@ -1,0 +1,20 @@
+uuid: e993eb32-1b36-44cc-8e08-1b85c197c651
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.userlogin_2
+config_name: block.userlogin_2
+document_id: 74d88018-3239-49d9-b8a4-92cac8f8cdf8
+source_status:
+  en: CURRENT
+target_status:
+  ta: CURRENT
+  te: CURRENT
+  bn: CURRENT
+  hi: CURRENT
+profile: automatic
+hash: 12d7df90def75b9a779aa392f06d5284
+job_id: null
+uploaded_timestamp: 1616285055
+updated_timestamp: 1616559636

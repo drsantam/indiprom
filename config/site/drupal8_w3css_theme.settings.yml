@@ -1,0 +1,64 @@
+features:
+  comment_user_picture: true
+  comment_user_verification: 0
+  favicon: 0
+  logo: true
+  name: true
+  node_user_picture: true
+  slogan: true
+facebook_url: ''
+twitter_url: ''
+pinterest_url: ''
+google_plus_url: ''
+linkedin_url: ''
+instagram_url: ''
+youtube_url: ''
+drupal_url: ''
+rss_url: rss.xml
+copyright_text: 'Copyright 2021 - All Rights Reserved'
+show_social_icon: 0
+show_credit_link: 0
+top_region: 1
+main_region: 0
+bottom_region: 1
+footer_region: 1
+_core:
+  default_config_hash: IuCWuDD_IVMnouD2PLeWMWhfy33D_pra7Yt2PJ3FcyM
+logo:
+  use_default: 0
+  path: 'public://Logo 2_0_0.png'
+favicon:
+  use_default: 0
+  path: 'public://favicon_3.ico'
+  mimetype: image/vnd.microsoft.icon
+d8w3css_font_awesome_4: 0
+d8w3css_google_font: 0
+website_width: w3-width-2560
+equal_width: 0
+current_theme: w3-theme-00000
+color_page_wrapper: ''
+color_header: w3-text-black
+color_primary_menu: 'w3-text-white w3-blue w3-link-white w3-link-yellow-hover'
+color_welcome_text: ''
+color_highlighted: ''
+color_top_container: w3-text-black
+color_top_first: w3-text-black
+color_top_second: w3-text-black
+color_top_third: w3-text-black
+color_page_title: w3-text-black
+color_main: ''
+color_breadcrumb: ''
+color_sidebar_first: w3-text-black
+color_content: w3-text-black
+color_sidebar_second: w3-text-black
+color_bottom_container: w3-text-black
+color_bottom_first: 'w3-pale-blue w3-text-black'
+color_bottom_second: 'w3-pale-yellow w3-text-black'
+color_bottom_third: w3-text-black
+color_bottom_forth: w3-text-black
+color_footer_container: ''
+color_footer_first: ''
+color_footer_second: ''
+color_footer_third: ''
+color_footer_menu: ''
+color_copyright: ''

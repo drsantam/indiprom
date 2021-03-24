@@ -1,0 +1,29 @@
+uuid: bec269fa-6e34-4d1e-9dca-e6df981cefd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institute_type
+    - node.type.webform
+    - taxonomy.vocabulary.institute_name
+id: node.webform.field_institute_type
+field_name: field_institute_type
+entity_type: node
+bundle: webform
+label: 'Institute Type'
+description: 'Restrict access to this questionnaire to patients of a specific institute by choosing the names of the institute from the list. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      institute_name: institute_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
