@@ -93,7 +93,7 @@ Using Composer and wikimedia/composer-merge-plugin:
          "npm-asset"
      ],
 4: In the "installer-paths" section in the "extra" of your project composer.json
-   file, ensure you have an the types drupal-library, bower-asset, and npm-asset.
+ file, ensure you have the types drupal-library, bower-asset, and npm-asset.
    For example:
      "web/libraries/{$name}": [
          "type:drupal-library",

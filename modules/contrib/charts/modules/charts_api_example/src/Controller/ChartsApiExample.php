@@ -4,7 +4,6 @@ namespace Drupal\charts_api_example\Controller;
 
 use Drupal\charts\Services\ChartsSettingsServiceInterface;
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Uuid\UuidInterface;
@@ -39,8 +38,11 @@ class ChartsApiExample extends ControllerBase {
    * Construct.
    *
    * @param \Drupal\charts\Services\ChartsSettingsServiceInterface $chartSettings
+   *   The charts settings.
    * @param \Drupal\Core\Messenger\MessengerInterface $messenger
+   *   The messenger service.
    * @param \Drupal\Component\Uuid\UuidInterface $uuidService
+   *   The UUID service.
    */
   public function __construct(ChartsSettingsServiceInterface $chartSettings, MessengerInterface $messenger, UuidInterface $uuidService) {
     $this->chartSettings = $chartSettings->getChartsSettings();
@@ -62,36 +64,57 @@ class ChartsApiExample extends ControllerBase {
       return [];
     }
 
-    // Customize options here.
-    $options = [
-      'type' => $this->chartSettings['type'],
-      'title' => $this->t('Chart title'),
-      'xaxis_title' => $this->t('X-Axis'),
-      'yaxis_title' => $this->t('Y-Axis'),
-      'yaxis_min' => '',
-      'yaxis_max' => '',
-      'three_dimensional' => FALSE,
-      'title_position' => 'out',
-      'legend_position' => 'right',
-      'data_labels'=> $this->chartSettings['data_labels'],
-      'tooltips' => $this->chartSettings['tooltips'],
-      // 'grouping'   => TRUE,
-      'colors'   => $this->chartSettings['colors'],
-      'min'   => $this->chartSettings['min'],
-      'max'   => $this->chartSettings['max'],
-      'yaxis_prefix'   => $this->chartSettings['yaxis_prefix'],
-      'yaxis_suffix'   => $this->chartSettings['yaxis_suffix'],
-      'data_markers'   => $this->chartSettings['data_markers'],
-      'red_from'   => $this->chartSettings['red_from'],
-      'red_to'   => $this->chartSettings['red_to'],
-      'yellow_from'   => $this->chartSettings['yellow_from'],
-      'yellow_to'   => $this->chartSettings['yellow_to'],
-      'green_from'   => $this->chartSettings['green_from'],
-      'green_to'   => $this->chartSettings['green_to'],
+    // If you want to include raw options, you can do so like this.
+    // $options = [
+    // 'chart' => [
+    // 'backgroundColor' => '#000000'
+    // ]
+    // ];.
+    $build = [
+      '#type' => 'chart',
+      '#chart_type' => $this->chartSettings['type'],
+      '#title' => $this->t('Chart title'),
+      '#title_position' => 'out',
+      '#tooltips' => $this->chartSettings['display']['tooltips'],
+      '#data_labels' => $this->chartSettings['data_labels'] ?? '',
+      '#colors' => $this->chartSettings['display']['colors'],
+      '#background' => $this->chartSettings['display']['background'] ? $this->chartSettings['display']['background'] : 'transparent',
+      '#legend' => !empty($this->chartSettings['display']['legend_position']),
+      '#legend_position' => $this->chartSettings['display']['legend_position'] ? $this->chartSettings['display']['legend_position'] : '',
+      '#width' => $this->chartSettings['display']['dimensions']['width'],
+      '#height' => $this->chartSettings['display']['dimensions']['height'],
+      '#width_units' => $this->chartSettings['display']['dimensions']['width_units'],
+      '#height_units' => $this->chartSettings['display']['dimensions']['height_units'],
+     // '#raw_options' => $options,
+      '#chart_id' => 'foobar',
+    ];
+
+    $categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4'];
+
+    $build['xaxis'] = [
+      '#type' => 'chart_xaxis',
+      '#labels' => $categories,
+      '#title' => $this->chartSettings['xaxis']['title'] ? $this->chartSettings['xaxis']['title'] : FALSE,
+      '#labels_rotation' => $this->chartSettings['xaxis']['labels_rotation'],
+      '#axis_type' => $this->chartSettings['type'],
+    ];
+
+    $build['yaxis'] = [
+      '#type' => 'chart_yaxis',
+      '#title' => $this->chartSettings['yaxis']['title'] ? $this->chartSettings['yaxis']['title'] : '',
+      '#labels_rotation' => $this->chartSettings['yaxis']['labels_rotation'],
+      '#max' => $this->chartSettings['yaxis']['max'],
+      '#min' => $this->chartSettings['yaxis']['min'],
+    ];
+
+    $i = 0;
+    $build[$i] = [
+      '#type' => 'chart_data',
+      '#data' => [250, 350, 400, 200],
+      '#title' => 'Series 1',
     ];
 
     // Sample data format.
-    $categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4'];
     $seriesData[] = [
       'name' => 'Series 1',
       'color' => '#0d233a',
@@ -103,7 +126,7 @@ class ChartsApiExample extends ControllerBase {
         $seriesData[] = [
           'name' => 'Series 2',
           'color' => '#8bbc21',
-          'type' => 'column',
+          'type' => 'line',
           'data' => [150, 450, 500, 300],
         ];
         $seriesData[] = [
@@ -117,20 +140,49 @@ class ChartsApiExample extends ControllerBase {
 
     }
 
+    foreach ($seriesData as $index => $data) {
+      $build[$index] = [
+        '#type' => 'chart_data',
+        '#data' => $data['data'],
+        '#title' => $data['name'],
+        '#color' => $data['color'],
+        '#chart_type' => $data['type'],
+      ];
+    }
+
     // Creates a UUID for the chart ID.
     $chartId = 'chart-' . $this->uuidService->generate();
 
-    $build = [
-      '#theme' => 'charts_api_example',
-      '#library' => (string) $library,
-      '#categories' => $categories,
-      '#seriesData' => $seriesData,
-      '#options' => $options,
-      '#id' => $chartId,
-      '#override' => [],
-    ];
+    $build['#id'] = $chartId;
 
     return $build;
+  }
+
+  /**
+   * Display Two.
+   *
+   * @return array
+   *   Array to render.
+   */
+  public function displayTwo() {
+
+    $chart = [];
+    $chart['example_one'] = [
+      '#type' => 'chart',
+      '#chart_type' => 'column',
+    ];
+    $chart['example_one']['male'] = [
+      '#type' => 'chart_data',
+      '#title' => $this->t('Male'),
+      '#data' => [10, 20, 30],
+    ];
+    $chart['example_one']['xaxis'] = [
+      '#type' => 'chart_xaxis',
+      '#title' => $this->t('Month'),
+      '#labels' => [$this->t('Jan'), $this->t('Feb'), $this->t('Mar')],
+    ];
+
+    return $chart;
   }
 
   /**

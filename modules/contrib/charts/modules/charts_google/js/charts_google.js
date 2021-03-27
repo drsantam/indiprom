@@ -54,9 +54,10 @@
         var $chart = $(this);
 
         if ($chart.attr('data-chart')) {
-          var data = $chart.attr('data-chart');
-          var options = $chart.attr('google-options');
-          var type = $chart.attr('google-chart-type');
+          var dataAttributes = JSON.parse($chart.attr('data-chart'));
+          var data = dataAttributes['data'];
+          var options = dataAttributes['options'];
+          var type = dataAttributes['visualization'];
 
           google.charts.setOnLoadCallback(Drupal.googleCharts.drawChart(chartId, type, data, options));
         }
@@ -76,11 +77,10 @@
    */
   Drupal.googleCharts.drawChart = function (chartId, chartType, dataTable, googleChartOptions) {
     return function () {
-      var data = google.visualization.arrayToDataTable(JSON.parse(dataTable));
-      var options = JSON.parse(googleChartOptions);
-
-      var googleChartTypeObject = JSON.parse(chartType);
-      var googleChartTypeFormatted = googleChartTypeObject.type;
+      var data = google.visualization.arrayToDataTable(dataTable);
+      var options = googleChartOptions;
+      var googleChartTypeFormatted = chartType;
+      console.log(googleChartTypeFormatted);
       var chart;
 
       switch (googleChartTypeFormatted) {
@@ -91,8 +91,6 @@
           chart = new google.visualization.ColumnChart(document.getElementById(chartId));
           break;
         case 'DonutChart':
-          chart = new google.visualization.PieChart(document.getElementById(chartId));
-          break;
         case 'PieChart':
           chart = new google.visualization.PieChart(document.getElementById(chartId));
           break;
@@ -103,13 +101,14 @@
           chart = new google.visualization.AreaChart(document.getElementById(chartId));
           break;
         case 'LineChart':
-          chart = new google.visualization.LineChart(document.getElementById(chartId));
-          break;
         case 'SplineChart':
           chart = new google.visualization.LineChart(document.getElementById(chartId));
           break;
-        case 'GaugeChart':
+        case 'Gauge':
           chart = new google.visualization.Gauge(document.getElementById(chartId));
+          break;
+        case 'ComboChart':
+          chart = new google.visualization.ComboChart(document.getElementById(chartId));
           break;
         case 'GeoChart':
           chart = new google.visualization.GeoChart(document.getElementById(chartId));

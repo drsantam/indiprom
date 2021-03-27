@@ -9,12 +9,17 @@ use Drupal\Core\Config\ConfigFactoryInterface;
  */
 class ChartsSettingsService implements ChartsSettingsServiceInterface {
 
+  /**
+   * The factory configuration.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
   private $configFactory;
 
   /**
    * Construct.
    *
-   * @param ConfigFactoryInterface $config_factory
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   Config factory.
    */
   public function __construct(ConfigFactoryInterface $config_factory) {

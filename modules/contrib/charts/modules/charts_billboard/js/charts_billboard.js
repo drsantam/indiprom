@@ -5,17 +5,13 @@
 (function ($) {
   'use strict';
 
-  Drupal.behaviors.chartsBb = {
+  Drupal.behaviors.chartsBillboard = {
     attach: function (context, settings) {
-
-      $('.charts-bb').each(function (param) {
-        var chartId = $(this).attr('id');
-        $('#' + chartId).once().each(function () {
-          if ($(this).attr('data-chart')) {
-            var bbChart = $(this).attr('data-chart');
-            bb.generate(JSON.parse(bbChart));
-          }
-        });
+      $('.charts-billboard', context).once().each(function () {
+        if ($(this).attr('data-chart')) {
+          let config = $.parseJSON($(this).attr('data-chart'));
+          bb.generate(config);
+        }
       });
     }
   };
