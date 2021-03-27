@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.role.cancer_site-member
 config_name: group_role.cancer_site-member
-document_id: 30dc214a-adde-41f4-9bb0-ba425b560c42
+document_id: ed926d5e-d289-4f89-9941-aeb53cfa5f63
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: db464ca3b712c7f64c59c2d52bd3537c
 job_id: null
 uploaded_timestamp: 1616570329
-updated_timestamp: 1616571106
+updated_timestamp: 1616687798

@@ -5,7 +5,7 @@ dependencies:
   config:
     - block.block.drupal8_w3css_theme_powered
 config_name: block.drupal8_w3css_theme_powered
-document_id: cc4dba86-7f29-42df-b8cf-7421b9074e91
+document_id: 5d986677-3763-44c8-ba4a-07e08e9a725b
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: f0ce35481ad8d66366fd18722ca7280e
 job_id: null
 uploaded_timestamp: 1616284554
-updated_timestamp: 1616559636
+updated_timestamp: 1616659042

@@ -1,6 +1,6 @@
 uuid: 9f529ad8-e866-4cc4-9be2-1b1829101c85
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.available_questionnaires
@@ -10,7 +10,7 @@ dependencies:
     - drupal8_w3css_theme
 id: available_questionnaires_available
 theme: drupal8_w3css_theme
-region: welcome_text
+region: top_first
 weight: 0
 provider: null
 plugin: 'views_block:available_questionnaires-available_questionnaires_block'
@@ -21,4 +21,5 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility: {  }

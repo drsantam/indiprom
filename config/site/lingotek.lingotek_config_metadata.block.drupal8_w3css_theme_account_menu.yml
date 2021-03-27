@@ -5,7 +5,7 @@ dependencies:
   config:
     - block.block.drupal8_w3css_theme_account_menu
 config_name: block.drupal8_w3css_theme_account_menu
-document_id: 00cb062d-506a-4e74-9057-6502fbd3d17f
+document_id: a1c4bb48-ef63-42c8-839f-8c031a9027f0
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: 3547c469bedb7ec1173fd9c23ed0157a
 job_id: null
 uploaded_timestamp: 1616284554
-updated_timestamp: 1616559636
+updated_timestamp: 1616659042

@@ -14,6 +14,7 @@ display:
         timestamp:
           label: தேதி
         name:
+          label: பயனர்
           separator: ', '
         link:
           label: செயல்பாடுகள்

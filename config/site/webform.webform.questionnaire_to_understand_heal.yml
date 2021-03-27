@@ -21,7 +21,7 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
@@ -39,7 +39,7 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: true
+  form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
@@ -94,10 +94,10 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: true
+  wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 1
+  preview: 0
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -157,6 +157,7 @@ access:
       - cancer_site-care_seeker
   view_any:
     roles:
+      - care_provider
       - local_administrator
       - administrator
     users: {  }

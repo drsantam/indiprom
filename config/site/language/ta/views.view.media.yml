@@ -31,3 +31,7 @@ display:
           separator: ', '
         operations:
           label: செயல்பாடுகள்
+      filters:
+        langcode:
+          expose:
+            label: மொழி

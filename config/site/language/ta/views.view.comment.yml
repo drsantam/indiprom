@@ -25,9 +25,17 @@ display:
           label: செயல்பாடுகள்
         name_1:
           separator: ', '
+      filters:
+        langcode:
+          expose:
+            label: மொழி
       use_more_text: மேலும்
   page_unapproved:
     display_options:
+      filters:
+        langcode:
+          expose:
+            label: மொழி
       fields:
         subject:
           separator: ', '

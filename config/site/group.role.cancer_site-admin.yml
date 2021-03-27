@@ -22,3 +22,4 @@ permissions:
   - 'update own group_membership content'
   - 'view group'
   - 'view group_membership content'
+  - 'view group_node:webform entity'

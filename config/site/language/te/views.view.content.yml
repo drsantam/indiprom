@@ -20,5 +20,8 @@ display:
         status:
           expose:
             label: స్థితి
+        langcode:
+          expose:
+            label: భాష
   page_1:
     display_title: పేజీ

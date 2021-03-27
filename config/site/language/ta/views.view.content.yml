@@ -15,14 +15,21 @@ display:
             last: 'கடந்த »'
       fields:
         type:
+          label: 'உள்ளடக்க வகை'
           separator: ', '
         status:
           label: நிலை
         operations:
           label: செயல்பாடுகள்
       filters:
+        type:
+          expose:
+            label: 'உள்ளடக்க வகை'
         status:
           expose:
             label: நிலை
+        langcode:
+          expose:
+            label: மொழி
   page_1:
     display_title: பக்கம்

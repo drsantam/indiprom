@@ -2,12 +2,7 @@ uuid: c1fb3867-cbc8-4906-9416-cbc6b1420a4b
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.field_cancer_site
-    - field.field.user.user.field_date_treatment_start
-    - field.field.user.user.field_registering_institute
   module:
-    - datetime
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -21,31 +16,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_cancer_site:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_date_treatment_start:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_registering_institute:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  language:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   contact: true
   langcode: true
+  language: true
   path: true
   timezone: true

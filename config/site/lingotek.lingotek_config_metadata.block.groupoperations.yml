@@ -5,7 +5,7 @@ dependencies:
   config:
     - block.block.groupoperations
 config_name: block.groupoperations
-document_id: a618556d-2f32-45b6-9be9-cab35aee1854
+document_id: 2c3411dd-82de-4bcc-b9a9-1691f25c8bc9
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: 76b36765b76d70a94f4234218f7308d6
 job_id: null
 uploaded_timestamp: 1616284733
-updated_timestamp: 1616559636
+updated_timestamp: 1616659042

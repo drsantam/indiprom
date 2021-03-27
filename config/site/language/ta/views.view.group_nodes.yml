@@ -16,6 +16,7 @@ display:
         title:
           separator: ', '
         type:
+          label: 'உள்ளடக்க வகை'
           separator: ', '
         status:
           label: நிலை

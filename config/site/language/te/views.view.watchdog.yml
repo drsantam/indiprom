@@ -11,6 +11,8 @@ display:
       fields:
         timestamp:
           label: తేదీ
+        name:
+          label: వాడుకరి
         link:
           label: కార్యాలు
   page:

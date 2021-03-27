@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.role.cancer_site-outsider
 config_name: group_role.cancer_site-outsider
-document_id: e3548b05-7796-429d-bfc5-286aa91b37f2
+document_id: 507e3225-a0dc-4d6f-9f29-cf14d2800f21
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: d5129f228cb730bb93fe040e01f9fc96
 job_id: null
 uploaded_timestamp: 1616570329
-updated_timestamp: 1616571106
+updated_timestamp: 1616687798

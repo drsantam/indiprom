@@ -9,6 +9,8 @@ display:
           expose:
             items_per_page_options_all_label: '- అన్ని -'
       fields:
+        name:
+          label: వాడుకరి
         group_roles:
           label: పాత్రలు
         dropbutton:

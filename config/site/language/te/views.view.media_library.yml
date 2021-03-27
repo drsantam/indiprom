@@ -5,6 +5,13 @@ display:
         options:
           expose:
             items_per_page_options_all_label: '- అన్ని -'
+      filters:
+        name:
+          expose:
+            label: పేరు
+        langcode:
+          expose:
+            label: భాష
   page:
     display_title: పేజీ
     display_options:
@@ -13,3 +20,18 @@ display:
           text: మార్చు
         delete_media:
           text: తొలగించు
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: పేరు
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: పేరు
+      filters:
+        name:
+          expose:
+            label: పేరు

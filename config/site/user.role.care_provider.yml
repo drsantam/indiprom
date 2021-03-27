@@ -9,3 +9,4 @@ is_admin: null
 permissions:
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'view any care_seeker_information content'

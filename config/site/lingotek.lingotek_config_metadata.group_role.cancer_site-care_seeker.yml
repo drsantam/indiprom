@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.role.cancer_site-care_seeker
 config_name: group_role.cancer_site-care_seeker
-document_id: 5100a9f1-ec3e-4d23-abe9-42afa8fc73b3
+document_id: e6781318-3dba-4cb8-abd6-5d74a14d0e00
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: 0a9d9ea1dbcddb93db0e6d4aa1520406
 job_id: null
 uploaded_timestamp: 1616570391
-updated_timestamp: 1616571106
+updated_timestamp: 1616687798

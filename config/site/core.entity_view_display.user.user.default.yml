@@ -2,12 +2,7 @@ uuid: 599ffe3a-e582-45c6-b53c-fcf7fa3b76ca
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.field_cancer_site
-    - field.field.user.user.field_date_treatment_start
-    - field.field.user.user.field_registering_institute
   module:
-    - datetime
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -16,31 +11,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_cancer_site:
-    weight: 8
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_date_treatment_start:
-    weight: 6
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_registering_institute:
-    weight: 7
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   member_for:
     weight: 5
     region: content

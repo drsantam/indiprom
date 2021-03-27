@@ -9,16 +9,22 @@ display:
           expose:
             items_per_page_options_all_label: '- అన్ని -'
       fields:
+        created:
+          label: సృష్టితం
         view_webform_submission:
           label: కార్యాలు
   embed_administer:
     display_options:
       fields:
+        created:
+          label: సృష్టితం
         operations:
           label: కార్యాలు
   embed_manage:
     display_options:
       fields:
+        created:
+          label: సృష్టితం
         view_webform_submission:
           label: కార్యాలు
         edit_webform_submission:
@@ -26,5 +32,7 @@ display:
   embed_review:
     display_options:
       fields:
+        created:
+          label: సృష్టితం
         view_webform_submission:
           label: కార్యాలు

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_cancer_site_type
     - node.type.webform
-    - taxonomy.vocabulary.cancer_site
 id: node.webform.field_cancer_site_type
 field_name: field_cancer_site_type
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      cancer_site: cancer_site
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

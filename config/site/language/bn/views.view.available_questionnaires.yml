@@ -11,3 +11,14 @@ display:
       header:
         result:
           content: 'আপনার স্বাস্থ্য সম্পর্কিত সমস্যার ব্যাপারে জানতে @total প্রশ্নাবলী উপলব্ধ আছে।  বাটন এ ক্লিক করে  বা ট্যাপ করে আমাদের এই সমস্যার সম্পর্কে জানান'
+      title: 'উপলব্ধ প্রশ্নাবলী '
+  available_questionnaires_block:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: 'স্বাস্থ্য সম্পর্কিত সমস্যার প্রশ্নাবলী {{ counter }}'
+        view_node:
+          alter:
+            text: '<strong>ক্লিক বা ট্যাপ করে উত্তর দিন </strong>'
+      block_description: 'আপনার জন্যে উপলব্ধ প্রশ্নাবলী '

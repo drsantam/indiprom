@@ -11,9 +11,17 @@ display:
       fields:
         operations:
           label: కార్యాలు
+      filters:
+        langcode:
+          expose:
+            label: భాష
       use_more_text: మరిన్ని
   page_unapproved:
     display_options:
+      filters:
+        langcode:
+          expose:
+            label: భాష
       fields:
         operations:
           label: కార్యాలు

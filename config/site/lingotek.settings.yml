@@ -84,7 +84,7 @@ translate:
   entity:
     media:
       audio:
-        enabled: true
+        enabled: false
         field:
           name: true
           path: true
@@ -125,6 +125,14 @@ translate:
           body: true
           field_description: true
         profile: automatic
+    taxonomy_term:
+      cancer_site:
+        enabled: false
+      institute_name:
+        enabled: true
+        field:
+          name: true
+        profile: automatic
   config:
     block:
       enabled: true
@@ -151,6 +159,12 @@ translate:
       enabled: true
       profile: automatic
     webform:
+      enabled: true
+      profile: manual
+    taxonomy_term_fields:
+      enabled: true
+      profile: manual
+    taxonomy_vocabulary:
       enabled: true
       profile: manual
   interface: {  }

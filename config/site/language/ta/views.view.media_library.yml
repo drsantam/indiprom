@@ -9,6 +9,13 @@ display:
         options:
           expose:
             items_per_page_options_all_label: '- அனைத்தும் -'
+      filters:
+        name:
+          expose:
+            label: பெயர்
+        langcode:
+          expose:
+            label: மொழி
   page:
     display_title: பக்கம்
     display_options:
@@ -19,3 +26,18 @@ display:
           text: மாற்று
         delete_media:
           text: அழி
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: பெயர்
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: பெயர்
+      filters:
+        name:
+          expose:
+            label: பெயர்

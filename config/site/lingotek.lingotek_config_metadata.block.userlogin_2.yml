@@ -5,7 +5,7 @@ dependencies:
   config:
     - block.block.userlogin_2
 config_name: block.userlogin_2
-document_id: 74d88018-3239-49d9-b8a4-92cac8f8cdf8
+document_id: fc2a0a75-02cf-41b4-a150-9b399d276b11
 source_status:
   en: CURRENT
 target_status:
@@ -17,4 +17,4 @@ profile: automatic
 hash: 12d7df90def75b9a779aa392f06d5284
 job_id: null
 uploaded_timestamp: 1616285055
-updated_timestamp: 1616559636
+updated_timestamp: 1616659042

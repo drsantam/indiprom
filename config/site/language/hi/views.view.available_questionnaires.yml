@@ -2,13 +2,20 @@ display:
   page_1:
     display_options:
       menu:
-        title: 'आपके लिए उपलब्ध प्रश्नावली'
+        title: 'उपलब्ध प्रश्नावली'
       fields:
         view_node:
           text: 'यहाँ क्लिक अथवा टैप करे'
   available_questionnaires_block:
     display_options:
       block_description: 'आपके लिए उपलब्ध प्रश्नावली'
+      fields:
+        title:
+          alter:
+            text: 'स्वास्थ्य सम्पर्कित समस्याओं की प्रश्नावली {{ counter }}'
+        view_node:
+          alter:
+            text: '<strong>क्लिक या टैप करके उत्तर दे </strong>'
   default:
     display_options:
       header:

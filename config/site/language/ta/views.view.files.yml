@@ -15,6 +15,7 @@ display:
             items_per_page_options_all_label: '- அனைத்தும் -'
       fields:
         filename:
+          label: பெயர்
           separator: ', '
         status:
           label: நிலை
@@ -34,3 +35,6 @@ display:
             next: 'அடுத்த ›'
           expose:
             items_per_page_options_all_label: '- அனைத்தும் -'
+      fields:
+        entity_label:
+          label: உருப்படி
