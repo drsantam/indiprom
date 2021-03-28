@@ -118,7 +118,7 @@ translate:
           body: true
         profile: automatic
       webform:
-        enabled: true
+        enabled: false
         field:
           title: true
           path: true
